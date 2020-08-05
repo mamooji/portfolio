@@ -1,6 +1,6 @@
 export default [
   {
-    title: "Burgers builder",
+    title: "Burger builder",
     description: "sample description",
     image: "url",
     gitHubLink: "",
