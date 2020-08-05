@@ -98,7 +98,7 @@ const ButtonAppBar = (props) => {
             color="inherit"
             aria-label="menu"
             component={RouterLink}
-            to="/"
+            to="/portfolio"
           >
             <HomeIcon />
           </IconButton>
