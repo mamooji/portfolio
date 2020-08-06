@@ -4,7 +4,7 @@ import "./App.css";
 import Main from "./components/routes/main";
 function App() {
   return (
-    <div>
+    <div style={{ width: "100%", height: "100%" }}>
       <AppBar />
       <Main />
     </div>

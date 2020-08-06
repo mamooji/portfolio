@@ -3,19 +3,12 @@ import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import dp from "../../images/profileLOGO.png";
 const useStyles = makeStyles((theme) => ({
-  div: {
-    width: "100%",
-    height: "100%",
-    margin: "auto",
-  },
   grid: {
     background: "#EF3B36",
     background: "-webkit-linear-gradient(to left, #FFFFFF, #EF3B36)",
     background: "linear-gradient(to left, #FFFFFF, #EF3B36)",
-    position: "static",
-    margin: "auto",
-    height: "100%",
     textAlign: "center",
+    margin: "auto",
   },
   dp: {
     height: "250px",
@@ -24,18 +17,13 @@ const useStyles = makeStyles((theme) => ({
   bannerText: {
     backgroundColor: "black",
     opacity: ".8",
-    width: "75%",
-    margin: "auto",
+    margin: "3em",
+    textAlign: "center",
     borderRadius: "10px",
     "& h1": {
       fontSize: "66px",
       fontWeight: "bold",
       color: "white",
-    },
-    "& hr": {
-      borderTop: "5px dotted white",
-      width: "50%",
-      margin: "auto",
     },
     "& p": {
       color: "white",
@@ -44,11 +32,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   social: {
-    display: "flex",
     justifyContent: "space-between",
     width: "50%",
+    textAlign: "center",
     margin: "auto",
-    marginBottom: "7em",
     "& i": {
       color: "white",
       fontSize: "5em",
@@ -59,15 +46,14 @@ const useStyles = makeStyles((theme) => ({
 const Landing = (props) => {
   const classes = useStyles();
   return (
-    <div className={classes.div}>
-      <Grid container spacing={3} className={classes.grid}>
+    <Grid container direction="column" className={classes.grid}>
+      <Grid item container>
         <Grid item xs={false} sm={2} />
-        <Grid item xs={12} style={{ marginBottom: "5em" }}>
+        <Grid item xs={12} sm={8}>
           <img src={dp} alt="avatar" className={classes.dp} />
           <div className={classes.bannerText}>
             <h1>Full Stack Web Developer</h1>
-            <hr />
-            <p> HTML/CSS | JavaScript | React | NodeJS | ASP.NET | Android </p>
+            <p> HTML/CSS | JavaScript | React | NodeJS | ASP.NET | Java | C </p>
             <div className={classes.social}>
               {/* linked in */}
               <a
@@ -98,7 +84,7 @@ const Landing = (props) => {
         </Grid>
         <Grid item xs={false} sm={2} />
       </Grid>
-    </div>
+    </Grid>
   );
 };
 
