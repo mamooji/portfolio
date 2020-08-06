@@ -21,14 +21,14 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     borderRadius: "10px",
     "& h1": {
-      fontSize: "66px",
+      fontSize: "60px",
       fontWeight: "bold",
       color: "white",
     },
     "& p": {
       color: "white",
       fontSize: "20px",
-      padding: "1em",
+      padding: "8px",
     },
   },
   social: {
