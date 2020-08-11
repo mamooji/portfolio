@@ -4,7 +4,9 @@ import "./App.css";
 import Main from "./components/routes/main";
 function App() {
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div
+      style={{ display: "flex", minHeight: "100vh", flexDirection: "column" }}
+    >
       <AppBar />
       <Main />
     </div>

@@ -3,12 +3,19 @@ import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import dp from "../../images/profileLOGO.png";
 const useStyles = makeStyles((theme) => ({
-  grid: {
+  gridMain: {
     background: "#EF3B36",
     background: "-webkit-linear-gradient(to left, #FFFFFF, #EF3B36)",
     background: "linear-gradient(to left, #FFFFFF, #EF3B36)",
     textAlign: "center",
     margin: "auto",
+    height: "100%",
+    minHeight: "100%",
+    flexGrow: 1,
+    flex: 1,
+  },
+  grid: {
+    textAlign: "center",
   },
   dp: {
     height: "250px",
@@ -46,8 +53,8 @@ const useStyles = makeStyles((theme) => ({
 const Landing = (props) => {
   const classes = useStyles();
   return (
-    <Grid container direction="column" className={classes.grid}>
-      <Grid item container>
+    <Grid container direction="column" className={classes.gridMain}>
+      <Grid item container className={classes.grid}>
         <Grid item xs={false} sm={2} />
         <Grid item xs={12} sm={8}>
           <img src={dp} alt="avatar" className={classes.dp} />

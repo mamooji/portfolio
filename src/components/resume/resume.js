@@ -20,6 +20,8 @@ const Resume = () => {
               height: "1000px",
               border: "none",
               padding: "1em",
+              margin: 0,
+              flexGrow: 1,
             }}
             src={resume}
           ></iframe>
