@@ -78,11 +78,11 @@ const Projects = () => {
       <TabPanel value={value} index={0}>
         <Grid container direction="column">
           <Grid item container>
-            <Grid item xs={0} sm={2} />
+            <Grid item xs={false} sm={2} />
             <Grid item xs={12} sm={8}>
               <Content subject="react" />
             </Grid>
-            <Grid item xs={0} sm={2} />
+            <Grid item xs={false} sm={2} />
           </Grid>
         </Grid>
       </TabPanel>
@@ -90,11 +90,11 @@ const Projects = () => {
       <TabPanel value={value} index={1}>
         <Grid container direction="column">
           <Grid item container>
-            <Grid item xs={0} sm={2} />
+            <Grid item xs={false} sm={2} />
             <Grid item xs={12} sm={8}>
               <Content subject="html" />
             </Grid>
-            <Grid item xs={0} sm={2} />
+            <Grid item xs={false} sm={2} />
           </Grid>
         </Grid>
       </TabPanel>
@@ -102,11 +102,11 @@ const Projects = () => {
       <TabPanel value={value} index={2}>
         <Grid container direction="column">
           <Grid item container>
-            <Grid item xs={0} sm={2} />
+            <Grid item xs={false} sm={2} />
             <Grid item xs={12} sm={8}>
               <Content subject="android" />
             </Grid>
-            <Grid item xs={0} sm={2} />
+            <Grid item xs={false} sm={2} />
           </Grid>
         </Grid>
       </TabPanel>

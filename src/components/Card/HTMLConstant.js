@@ -24,7 +24,8 @@ export default [
   },
   {
     title: "ASP.NET High Low Game",
-    description: "sample description",
+    description:
+      "Simple yet effective High-Low game to showcase client/server side capabilities with ASP.NET. Developed with ASP.NET, Material CSS, HTML, and JavaScript. JavaScript...",
     image: GameImg,
     gitHubLink: "https://github.com/mamooji/HighLowGameASP.NET",
     demoLink: "",
