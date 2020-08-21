@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
-import { Document, Page } from "react-pdf";
 import resume from "../../resumePDF/resumeLatex.pdf";
 
 const Resume = () => {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
   return (
     <Grid container direction="column">
       <Grid item container>
