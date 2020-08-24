@@ -9,7 +9,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import { Link as RouterLink } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import { ListItem, ListItemText } from "@material-ui/core";
 import clsx from "clsx";
 import List from "@material-ui/core/List";
 import Drawer from "@material-ui/core/Drawer";
@@ -44,10 +44,6 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
 }));
-
-const LinkBehavior = React.forwardRef((props, ref) => (
-  <RouterLink ref={ref} to="/getting-started/installation/" {...props} />
-));
 
 const ButtonAppBar = (props) => {
   const theme = useTheme();

@@ -19,6 +19,7 @@ class About extends Component {
                 padding: "1em",
               }}
               src={selfie}
+              alt="selfie"
             />
             <Typography
               variant="subtitle1"
